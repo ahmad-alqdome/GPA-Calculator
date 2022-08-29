@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFFCFC"
+    android:isScrollContainer="true"
+    app:layout_scrollEffect="compress"
+    app:layout_scrollFlags="scroll"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar_id"
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="114dp"
+        app:srcCompat="@drawable/aabu" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/label"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="276dp"
+        android:text="@string/cumulative" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="346dp"
+        android:text="@string/cumulativeHours" />
+
+    <EditText
+        android:id="@+id/cum_avg_id"
+        style="@style/box"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="numberDecimal"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/cum_avg_hours_id"
+        style="@style/box"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="402dp"
+        android:background="#ffdddddd"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3" android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_ar_1_id"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="@string/article_one" />
+
+                <Spinner
+                    android:id="@+id/sp_ar_1_id"
+                    style="@style/spinner_for_hours"
+
+                    />
+
+                <EditText
+                    android:id="@+id/ed_ar_1_id"
+                    style="@style/box"
+                    android:layout_margin="5dp"
+                    android:inputType="number"/>
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3" android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_ar_2_id"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="@string/article_two" />
+
+                <Spinner
+                    android:id="@+id/sp_ar_2_id"
+                    style="@style/spinner_for_hours" />
+
+                <EditText
+                    android:id="@+id/ed_ar_2_id"
+                    style="@style/box"
+                    android:layout_margin="5dp"
+                    android:inputType="number" />
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3" android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_ar_3_id"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="@string/article_three" />
+
+                <Spinner
+                    android:id="@+id/sp_ar_3_id"
+                    style="@style/spinner_for_hours"/>
+
+                <EditText
+                    android:id="@+id/ed_ar_3_id"
+                    style="@style/box"
+                    android:layout_margin="5dp"
+                    android:inputType="number"/>
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3" android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_ar_4_id"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="@string/article_four" />
+
+                <Spinner
+                    android:id="@+id/sp_ar_4_id"
+                    style="@style/spinner_for_hours"/>
+
+                <EditText
+                    android:id="@+id/ed_ar_4_id"
+                    style="@style/box"
+                    android:layout_margin="5dp"
+                    android:inputType="number"/>
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3" android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_ar_5_id"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="@string/article_five" />
+
+                <Spinner
+                    android:id="@+id/sp_ar_5_id"
+                    style="@style/spinner_for_hours"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_ar_5_id"
+                    style="@style/box"
+                    android:layout_margin="5dp"
+                    android:inputType="number"/>
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3" android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_ar_6_id"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="@string/article_six" />
+
+                <Spinner
+                    android:id="@+id/sp_ar_6_id"
+                    style="@style/spinner_for_hours"/>
+
+                <EditText
+                    android:id="@+id/ed_ar_6_id"
+                    style="@style/box"
+                    android:layout_margin="5dp"
+                    android:inputType="number"/>
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3" android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_ar_7_id"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="@string/article_seven" />
+
+                <Spinner
+                    android:id="@+id/sp_ar_7_id"
+                    style="@style/spinner_for_hours"/>
+
+                <EditText
+                    android:id="@+id/ed_ar_7_id"
+                    style="@style/box"
+                    android:layout_margin="5dp"
+                    android:inputType="number"/>
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_ar_8_id"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="@string/article_eight"
+                    android:layout_marginBottom="50dp"/>
+
+                <Spinner
+                    android:id="@+id/sp_ar_8_id"
+                    style="@style/spinner_for_hours" />
+
+                <EditText
+                    android:id="@+id/ed_ar_8_id"
+                    style="@style/box"
+                    android:layout_margin="5dp"
+                    android:inputType="number"/>
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_cal_id"
+        android:layout_width="411dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="758dp"
+        android:background="@color/notificationBar"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">حساب المعدل التراكمي </string>
+    <string name="scroll">scroll</string>
+    <string name="click">Click</string>
+    <string name="title">جامعة ال البيت</string>
+    <string name="cumulative">المعدل التراكمي</string>
+    <string name="cumulativeHours">عدد الساعات</string>
+    <string name="article_one">المادة الاولى</string>
+    <string name="hr">_______________________________________________________________</string>
+    <string name="article_two">المادة الثانية</string>
+    <string name="article_three">المادة الثالثة</string>
+    <string name="article_four">المادة الرابعة</string>
+    <string name="article_five">المادة الخامسة</string>
+    <string name="article_six">المادة السادسة</string>
+    <string name="article_seven">المادة السابعة</string>
+    <string name="article_eight">المادة الثامنة</string>
+    <string name="calculate">Calculate</string>
+    <string name="hint_value">0</string>
+    <string name="todo">TODO</string>
+    <string-array name="hours">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="massage_mark">ادخل المعدل التراكمي</string>
+    <string name="massage_hours">ادخل عدد الساعات</string>
+
+
+    <string name="excellence">امتياز</string>
+    <string name="excellent">ممتاز</string>
+    <string name="very_good">جيد جدا</string>
+    <string name="good">جيد</string>
+    <string name="acceptable">مقبول</string>
+    <string name="fail">راسب</string>
+    <string name="bad">ضعيف</string>
+</resources>

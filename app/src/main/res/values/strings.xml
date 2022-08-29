@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">GPA calculation</string>
+    <string name="scroll">scroll</string>
+    <string name="click">Click</string>
+    <string name="title">Al AlBayt University</string>
+    <string name="cumulative">Cumulative avg</string>
+    <string name="cumulativeHours">Number of hours</string>
+    <string name="article_one">Article 1</string>
+    <string name="hr">_______________________________________________________________</string>
+    <string name="article_two">Article 2</string>
+    <string name="article_three">Article 3</string>
+    <string name="article_four">Article 4</string>
+    <string name="article_five">Article 5</string>
+    <string name="article_six">Article 6</string>
+    <string name="article_seven">Article 7</string>
+    <string name="article_eight">Article 8</string>
+    <string name="calculate">Calculate</string>
+    <string name="hint_value">0</string>
+    <string name="todo">TODO</string>
+    <string-array name="hours">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="massage_mark">Enter Cumulative Mark</string>
+    <string name="massage_hours">Enter Cumulative Hours</string>
+    <string name="excellence">Excellence</string>
+    <string name="excellent">Excellent</string>
+    <string name="very_good">Very Good</string>
+    <string name="good">Good</string>
+    <string name="acceptable">Acceptable</string>
+    <string name="fail">Fail</string>
+    <string name="bad">Bad</string>
+</resources>

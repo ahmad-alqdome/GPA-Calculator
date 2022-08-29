@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cumulative">المعدل التراكمي</string>
+    <string name="artical_two">"المادة الثانية "</string>
+    <string name="button">Calculate</string>
+</resources>
