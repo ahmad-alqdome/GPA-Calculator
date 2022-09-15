@@ -66,7 +66,7 @@ void setAdapter(){
 
 void addMark(Spinner sp , String mark)
 {
-    if(!(sp.getSelectedItemPosition()==0&&mark.isEmpty()))
+    if(sp.getSelectedItemPosition()!=0&&!mark.isEmpty())
     {
         sumMark+=sp.getSelectedItemPosition()*Integer.parseInt(mark);
         sumHours+=sp.getSelectedItemPosition();
